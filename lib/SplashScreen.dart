@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
 class Splashscreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
+  const Splashscreen({super.key});
 
-  Scaffold build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white, body: Center());
+  @override
+  State<Splashscreen> createState() => _SplashscreenState();
+}
+
+//class _SplashscreenState extends State<Splashscreen> {
+  @override
+  // TODO: implement createState
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(child: Image.asset('assets/images/logos.png', width: 150)),
+    );
   }
 }
