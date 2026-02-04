@@ -7,9 +7,42 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement createState
     return Scaffold(
-      body: SingleChildScrollView(child: Column(children: [
-
-        ],)),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 69, left: 14),
+              child: SizedBox(
+                width: 401,
+                height: 327,
+                child: Card(
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  color: const Color(0xFFFFFFFF),
+                  child: Column(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.only(top: 10),
+                        child: Text(
+                          'MUHAMMAD SHAYAN',
+                          style: TextStyle(
+                            color: Color(0xFF00ABD2),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                            height: 1.5,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
