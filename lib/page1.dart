@@ -33,6 +33,12 @@ class Page1 extends StatelessWidget {
                             fontSize: 16,
                             height: 1.5,
                           ),
+                          const SizedBox(height: 10),
+                      Image.asset(
+                        'assets/images/Ellipse.png',
+                        height: 111,
+                        width: 111,
+                      ),
                         ),
                       ),
                     ],
