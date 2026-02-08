@@ -23,11 +23,11 @@ class Page1 extends StatelessWidget {
                   color: const Color(0xFFFFFFFF),
                   child: Column(
                     children: [
-                      const Padding(
-                        padding: EdgeInsets.only(top: 10),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
                         child: Text(
                           'MUHAMMAD SHAYAN',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xFF00ABD2),
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
