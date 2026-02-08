@@ -33,26 +33,26 @@ class Page1 extends StatelessWidget {
                             fontSize: 16,
                             height: 1.5,
                           ),
-                          const SizedBox(height: 10),
-                          Image.asset(
-                            'assets/images/Ellipse.png',
-                            height: 111,
-                            width: 111,
-                          ),
-                          const SizedBox(height: 7),
-                          const Text(
-                            'Total balance',
-                            style: TextStyle(color: Color(0xFF000000)),
-                          ),
-                          const SizedBox(height: 7),
-                          const Text(
-                            'SAR. 177,664.90',
-                            style: TextStyle(
-                              color: Color(0xFF000000),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 25,
-                            ),
-                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Image.asset(
+                        'assets/images/Ellipse.png',
+                        height: 111,
+                        width: 111,
+                      ),
+                      const SizedBox(height: 7),
+                      const Text(
+                        'Total balance',
+                        style: TextStyle(color: Color(0xFF000000)),
+                      ),
+                      const SizedBox(height: 7),
+                      const Text(
+                        'SAR. 177,664.90',
+                        style: TextStyle(
+                          color: Color(0xFF000000),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
                         ),
                       ),
                     ],
