@@ -83,6 +83,18 @@ class Page1 extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: Row(
+                children: [
+                  actionButton(Icons.add, "Deposit"),
+                  actionButton(Icons.upload, "Send"),
+                  actionButton(Icons.swap_horiz, "Exchange"),
+                  actionButton(Icons.qr_code_scanner, "Scan"),
+                ],
+              ),
+            ),
           ],
         ),
       ),
