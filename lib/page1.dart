@@ -5,7 +5,6 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement createState
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -53,6 +52,30 @@ class Page1 extends StatelessWidget {
                           color: Color(0xFF000000),
                           fontWeight: FontWeight.bold,
                           fontSize: 25,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 80, top: 10),
+                        child: Row(
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Color(0xFF00ABD2),
+                              ),
+                              child: const Text(
+                                'Hide',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: const Text(
+                                'View Cards',
+                                style: TextStyle(color: Color(0xFF000000)),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
