@@ -101,3 +101,40 @@ class Page1 extends StatelessWidget {
     );
   }
 }
+
+Widget actionButton(IconData icon, String label) {
+  return Padding(
+    padding: const EdgeInsets.only(left: 14),
+    child: Container(
+      width: 95.91,
+      height: 100.75,
+      padding: EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(color: Colors.black12, blurRadius: 6, offset: Offset(0, 3)),
+        ],
+      ),
+      child: Column(
+        children: [
+          Container(
+            height: 44,
+            width: 44,
+            padding: EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Color(0xFFF0FCFF),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(icon, color: Color(0xFF00ABD2), size: 20),
+          ),
+          SizedBox(height: 8),
+          Text(
+            label,
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          ),
+        ],
+      ),
+    ),
+  );
+}
