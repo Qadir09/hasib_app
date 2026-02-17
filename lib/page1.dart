@@ -95,6 +95,26 @@ class Page1 extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 10),
+
+            // ================= TITLE ROW ===================
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Recent Transactions',
+                    style: TextStyle(
+                      color: Color(0xFF000000),
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextButton(onPressed: () {}, child: const Text('See all')),
+                ],
+              ),
+            ),
           ],
         ),
       ),
