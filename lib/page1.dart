@@ -151,8 +151,51 @@ class Page1 extends StatelessWidget {
           ],
         ),
       ),
+              ),
+            ),
+            const SizedBox(
+              height: 84,
+              width: 401,
+              child: Card(
+                color: Color(0xFFFDFDFD),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.arrow_forward_rounded,
+                    color: Colors.blue,
+                  ),
+                  subtitle: Row(
+                    children: [
+                      SizedBox(
+                        height: 36,
+                        width: 186,
+                        child: Text(
+                          'Fee Payment via Saudi Al\n Arbi Bank\n',
+                          style: TextStyle(
+                            color: Color(0xFF000000),
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 48),
+                      SizedBox(
+                        child: Text(
+                          'SAR. 999.00',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color(0xFF00ABD2),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          
     );
+        
   }
+
 }
 
 Widget actionButton(IconData icon, String label) {
