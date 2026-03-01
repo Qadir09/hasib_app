@@ -21,6 +21,23 @@ class AnalyticsPage extends StatelessWidget {
           ),
         ],
       ),
+      body: Padding(
+        padding: EdgeInsets.all(16),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  _buildToggleButton("Today", false),
+                  _buildToggleButton("Week", true),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
