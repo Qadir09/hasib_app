@@ -32,6 +32,9 @@ class AnalyticsPage extends StatelessWidget {
                 children: [
                   _buildToggleButton("Today", false),
                   _buildToggleButton("Week", true),
+                  _buildToggleButton("Month", false),
+                  _buildToggleButton("6 months", false),
+                  _buildToggleButton("12 months", false),
                 ],
               ),
             ],
@@ -40,4 +43,23 @@ class AnalyticsPage extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget _buildToggleButton(String text, bool isActive) {
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+    decoration: BoxDecoration(
+      color: isActive ? Colors.blue : Colors.transparent,
+      borderRadius: BorderRadius.circular(20),
+      border: Border.all(color: Colors.blue),
+    ),
+    child: Text(
+      text,
+      style: TextStyle(
+        color: isActive ? Colors.white : Colors.blue,
+        fontWeight: FontWeight.bold,
+        fontSize: 12,
+      ),
+    ),
+  );
 }
