@@ -78,6 +78,58 @@ class AnalyticsPage extends StatelessWidget {
                   ],
                 ),
               ),
+
+              SizedBox(
+                height: 200,
+                child: BarChart(
+                  BarChartData(
+                    borderData: FlBorderData(show: false),
+                    titlesData: FlTitlesData(
+                      leftTitles: AxisTitles(
+                        sideTitles: SideTitles(showTitles: false),
+                      ),
+                      topTitles: AxisTitles(
+                        sideTitles: SideTitles(showTitles: false),
+                      ),
+                      rightTitles: AxisTitles(
+                        sideTitles: SideTitles(showTitles: false),
+                      ),
+                      bottomTitles: AxisTitles(
+                        sideTitles: SideTitles(
+                          showTitles: true,
+                          getTitlesWidget: (value, meta) {
+                            const days = [
+                              "Mon",
+                              "Tue",
+                              "Wed",
+                              "Thu",
+                              "Fri",
+                              "Sun",
+                              "Sat",
+                            ];
+                            return Padding(
+                              padding: const EdgeInsets.only(top: 4),
+                              child: Text(
+                                days[value.toInt() % days.length],
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                    barGroups: [
+                      _buildBar(0, 12),
+                      _buildBar(1, 16),
+                      _buildBar(2, 22),
+                      _buildBar(3, 18),
+                      _buildBar(4, 20),
+                      _buildBar(5, 15),
+                      _buildBar(6, 17),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
