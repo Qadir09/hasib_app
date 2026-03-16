@@ -130,6 +130,22 @@ class AnalyticsPage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 24),
+
+              // Transactions Overview
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    "Transactions Overview",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "See all",
+                    style: TextStyle(fontSize: 14, color: Colors.blue),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
