@@ -146,6 +146,16 @@ class AnalyticsPage extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(height: 12),
+              _buildTransactionCard(
+                "Payment - Saudi Telecom Mobile Limited",
+                "SAR. 999.00",
+              ),
+              const SizedBox(height: 8),
+              _buildTransactionCard(
+                "Payment - Saudi Telecom Mobile Limited",
+                "SAR. 999.00",
+              ),
             ],
           ),
         ),
