@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:fl_chart/fl_chart.dart';
 
 class AnalyticsPage extends StatelessWidget {
   @override
